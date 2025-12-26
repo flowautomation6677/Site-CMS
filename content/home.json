@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title_highlight": "Autoridade Arquetípica Express 24h:",
+    "title_highlight": "Autoridade Arquetípica Express",
     "title_rest": " Para ser reconhecido como referência (mesmo sem ter milhares de seguidores)",
     "subtitle": "Um método simples prático que revela seu arquétipo, ajusta sua presença online e oferece ferramentas prontas para você aplicar imediatamente e ativar sua autoridade.",
     "cta": "SIM, QUERO ATRAIR CLIENTES PREMIUM",
@@ -9,8 +9,12 @@
   "pain": {
     "title": "Sua marca parece invisível no meio da multidão?",
     "items": [
-      { "text": "Você posta conteúdo, mas ninguém engaja?" },
-      { "text": "Sente dificuldade em comunicar seu diferencial e acaba competindo por preço?" }
+      {
+        "text": "Você posta conteúdo, mas ninguém engaja?"
+      },
+      {
+        "text": "Sente dificuldade em comunicar seu diferencial e acaba competindo por preço?"
+      }
     ],
     "highlight": "💫 Se isso soa familiar, não é falta de esforço — é falta de um mapa confiável."
   },
@@ -135,14 +139,38 @@
   "offer": {
     "title": "Autoridade Arquetípica Express",
     "items": [
-      { "name": "Card Luz e Sombra do seu arquétipo", "price": "R$147" },
-      { "name": "Manual de Modelagem Arquetípica", "price": "R$199" },
-      { "name": "Mapa de Linguagem Magnética", "price": "R$97" },
-      { "name": "Checklist Visual de Impacto", "price": "R$187" },
-      { "name": "Template com Prompt para sua Bio Arquetípica", "price": "R$147" },
-      { "name": "Guia Premium da Autoridade Magnética", "price": "R$97" },
-      { "name": "Lista com 40 Atitudes que geram autoridade", "price": "R$47" },
-      { "name": "Áudio Guiado de Ativação Magnética dos 12 arquétipos", "price": "R$97" }
+      {
+        "name": "Card Luz e Sombra do seu arquétipo",
+        "price": "R$147"
+      },
+      {
+        "name": "Manual de Modelagem Arquetípica",
+        "price": "R$199"
+      },
+      {
+        "name": "Mapa de Linguagem Magnética",
+        "price": "R$97"
+      },
+      {
+        "name": "Checklist Visual de Impacto",
+        "price": "R$187"
+      },
+      {
+        "name": "Template com Prompt para sua Bio Arquetípica",
+        "price": "R$147"
+      },
+      {
+        "name": "Guia Premium da Autoridade Magnética",
+        "price": "R$97"
+      },
+      {
+        "name": "Lista com 40 Atitudes que geram autoridade",
+        "price": "R$47"
+      },
+      {
+        "name": "Áudio Guiado de Ativação Magnética dos 12 arquétipos",
+        "price": "R$97"
+      }
     ],
     "total": "R$1.018",
     "price": "R$ 97,00",

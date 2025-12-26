@@ -14,6 +14,8 @@ collections:
       - file: "content/home.json"
         label: "Página Inicial"
         name: "home"
+        name: "home"
+        format: "json"
         fields:
           - {label: "Hero Section", name: "hero", widget: "object", fields: [
               {label: "Título Destaque", name: "title_highlight", widget: "string"},
