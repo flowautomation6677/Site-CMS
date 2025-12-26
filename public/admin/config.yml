@@ -1,0 +1,78 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/Imagens Produtos Instituto Felter"
+public_folder: "/Imagens Produtos Instituto Felter"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - file: "content/home.json"
+        label: "Página Inicial"
+        name: "home"
+        fields:
+          - {label: "Hero Section", name: "hero", widget: "object", fields: [
+              {label: "Título Destaque", name: "title_highlight", widget: "string"},
+              {label: "Restante do Título", name: "title_rest", widget: "string"},
+              {label: "Subtítulo", name: "subtitle", widget: "text"},
+              {label: "Texto Botão", name: "cta", widget: "string"},
+              {label: "Link Botão", name: "ctaLink", widget: "string"}
+            ]}
+          - {label: "Pain Section", name: "pain", widget: "object", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Destaque Final", name: "highlight", widget: "text"},
+              {label: "Itens de Dor", name: "items", widget: "list", fields: [
+                {label: "Texto", name: "text", widget: "string"}
+              ]}
+            ]}
+          - {label: "Method Section", name: "method", widget: "object", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Descrição", name: "description", widget: "text"},
+              {label: "Passos", name: "steps", widget: "list", fields: [
+                {label: "Ícone", name: "icon", widget: "string"},
+                {label: "Título", name: "title", widget: "string"},
+                {label: "Descrição", name: "description", widget: "text"}
+              ]}
+            ]}
+          - {label: "Deliverables Section", name: "deliverables", widget: "object", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Subtítulo", name: "subtitle", widget: "text"},
+              {label: "Entregáveis", name: "items", widget: "list", fields: [
+                {label: "Título", name: "title", widget: "string"},
+                {label: "Descrição", name: "description", widget: "text"},
+                {label: "Imagem", name: "image", widget: "image"}
+              ]}
+            ]}
+          - {label: "Testimonials Section", name: "testimonials", widget: "object", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Subtítulo", name: "subtitle", widget: "text"},
+              {label: "Depoimentos", name: "items", widget: "list", fields: [
+                {label: "Texto", name: "text", widget: "text"},
+                {label: "Autor", name: "author", widget: "string"},
+                {label: "Cargo", name: "role", widget: "string"}
+              ]}
+            ]}
+          - {label: "Offer Section", name: "offer", widget: "object", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Preço Cheio", name: "total", widget: "string"},
+              {label: "Preço com Desconto", name: "price", widget: "string"},
+              {label: "Texto 'De... Por'", name: "fullPrice", widget: "string"},
+              {label: "Texto Botão", name: "cta", widget: "string"},
+              {label: "Link Botão", name: "ctaLink", widget: "string"},
+              {label: "Garantia", name: "guarantee", widget: "string"},
+              {label: "Itens da Oferta", name: "items", widget: "list", fields: [
+                {label: "Nome", name: "name", widget: "string"},
+                {label: "Preço", name: "price", widget: "string"}
+              ]}
+            ]}
+          - {label: "FAQ Section", name: "faq", widget: "object", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Perguntas", name: "items", widget: "list", fields: [
+                {label: "Pergunta", name: "question", widget: "string"},
+                {label: "Resposta", name: "answer", widget: "text"}
+              ]}
+            ]}
