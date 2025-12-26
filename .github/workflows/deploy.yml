@@ -26,12 +26,8 @@ jobs:
     - name: Build 🏗️
       run: npm run build
 
-    - name: Deploy to Hostinger 🚀
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./out/
-        server-dir: ./public_html/
-        delete: false
+    - name: Deploy to Hostinger via LFTP 🚀
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y lftp
+        lftp -e "set ssl:verify-certificate no; open ${{ secrets.FTP_SERVER }}; user ${{ secrets.FTP_USERNAME }} '${{ secrets.FTP_PASSWORD }}'; mirror -R --verbose --parallel=10 ./out ./public_html; bye"
